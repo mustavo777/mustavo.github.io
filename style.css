@@ -1,0 +1,185 @@
+body {
+	margin-top: 20px;
+
+
+}
+.container{
+	width: 500px;
+	height: 650px;
+	margin: 0 auto;
+	display: grid;
+	background-color: #e8ede4;
+	border: 6px #736f73 ridge;
+	grid-template-rows: 1fr 1fr 400px;
+	/*-webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.75);
+*/
+	grid-column-gap: 5px;
+}
+
+.upperscr {
+	background-color: #eff0ec;
+	border-bottom: 6px #736f73 ridge;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 1em;
+	display: inline;
+
+}
+
+.upperscr p {
+	margin: 10px;
+}
+
+.lowerscr {
+	background-color: #eff0ec;
+	/*border-top: : 3px #736f73 solid;*/
+	border-bottom: 6px #736f73 ridge;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 3.5em;
+	
+
+}
+
+.lowerscr p {
+	margin: 0;
+	padding-top: 30px;
+	padding-right: 10px;
+	float: right;
+
+}
+
+.buttons {
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-areas:
+	"dokuz sekiz yedi ac"
+	"alti bes dort ce"
+	"uc iki bir esit"
+	"arti sifir eksi esit";
+
+
+}
+
+.buttons .numbers{
+  	background-color: #ccc9c8;
+  	-webkit-transition-duration: 0.2s; /* Safari */
+  	transition-duration: 0.2s;
+  	font-size: 1.5em;
+  	font-family: "Trebuchet MS", Helvetica, sans-serif;
+  	margin: 1px;
+
+}
+
+.buttons .numbers:hover {
+	background-color: #7d7d7d;
+  	color: white;
+
+}
+
+.buttons .clear{
+	background-color: #eff0ec;
+  	font-size: 1.7em;
+  	border: 4px solid #fa750f;
+  	border-radius: 2px;
+  	-webkit-transition-duration: 0.2s;
+  	transition-duration: 0.2s;
+  	font-family: "Trebuchet MS", Helvetica, sans-serif;
+  	margin: 1px;
+}
+
+.buttons .clear:hover {
+	background-color: #fa750f;
+	color: white;
+
+}
+
+.buttons .signs{
+	background-color: #eff0ec;
+	font-size: 2.5em;
+
+  	border: 4px solid green;
+  	border-radius: 2px;
+  	-webkit-transition-duration: 0.2s;
+  	transition-duration: 0.2s;
+  	font-family: "Trebuchet MS", Helvetica, sans-serif;
+  	margin: 1px;
+}
+
+.buttons .signs:hover {
+	background-color: green;
+	color: white;
+
+}
+
+
+.buttons #num1 {
+	grid-area: bir;
+
+
+}
+
+.buttons #num2 {
+	grid-area: iki;
+}
+
+.buttons #num3 {
+	grid-area: uc;
+}
+
+.buttons #num4 {
+	grid-area: dort;
+}
+
+.buttons #num5 {
+	grid-area: bes;
+}
+
+.buttons #num6 {
+	grid-area: alti;
+}
+
+.buttons #num7 {
+	grid-area: yedi;
+
+}
+
+.buttons #num8 {
+	grid-area: sekiz;
+
+}
+
+.buttons #num9 {
+	grid-area: dokuz;
+
+}
+
+.buttons #num0 {
+	grid-area: sifir;
+
+}
+
+.buttons #AC {
+	grid-area: ac;
+
+}
+
+.buttons #CE {
+	grid-area: ce;
+
+}
+
+.buttons #minus {
+	grid-area: eksi;
+
+}
+
+.buttons #plus {
+	grid-area: arti;
+}
+
+.buttons #equal {
+	grid-area: esit;
+
+}
